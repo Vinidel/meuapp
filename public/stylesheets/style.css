@@ -6,3 +6,99 @@ body {
 a {
   color: #00B7FF;
 }
+
+vini-navbar{
+background-color: rgb(255, 114, 18);
+display: block;
+font-family: Arial;
+font-size: 12px;
+height: 60px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+min-height: 60px;
+width: 1024px;
+}
+
+vini-globalnav{
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition-delay: 0s;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease-in-out;
+  display: block;
+  font-family: OpenSans, sans-serif;
+  font-size: 10px;
+  height: 48px;
+  left: 0px;
+  line-height: 12px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  min-height: 48px;
+  position: static;
+  right: 0px;
+  top: 0px;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  width: 1024px;
+  z-index: auto;  
+}
+
+vini-navcontent{
+-webkit-font-smoothing: antialiased;
+-webkit-transition-delay: 0s;
+-webkit-transition-duration: 0.2s;
+-webkit-transition-property: all;
+-webkit-transition-timing-function: ease-in-out;
+background-color: rgb(255, 114, 18);
+border-bottom-color: rgb(255, 255, 255);
+border-bottom-style: none;
+border-bottom-width: 0px;
+border-image-outset: 0px;
+border-image-repeat: stretch;
+border-image-slice: 100%;
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgb(255, 255, 255);
+border-left-style: none;
+border-left-width: 0px;
+border-right-color: rgb(255, 255, 255);
+border-right-style: none;
+border-right-width: 0px;
+border-top-color: rgb(255, 255, 255);
+border-top-style: none;
+border-top-width: 0px;
+box-sizing: content-box;
+color: rgb(255, 255, 255);
+display: block;
+font-family: Arial;
+font-size: 14px;
+height: 60px;
+left: 0px;
+line-height: 16.7999992370605px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+min-height: 60px;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 0px;
+position: fixed;
+right: 0px;
+text-align: center;
+top: 0px;
+transition-delay: 0s;
+transition-duration: 0.2s;
+transition-property: all;
+transition-timing-function: ease-in-out;
+vertical-align: baseline;
+width: 966px;
+z-index: 999;
+}
