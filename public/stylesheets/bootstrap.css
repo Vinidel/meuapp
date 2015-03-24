@@ -6419,7 +6419,25 @@ width: 1899px;
 background-color:  rgba(40, 108, 150, 0.93);;
 color:rgba(255, 255, 255, 1);
 }
-
+.form-signin{
+box-sizing: border-box;
+color: rgb(51, 51, 51);
+display: block;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-size: 14px;
+height: 266px;
+line-height: 20px;
+margin-bottom: 0px;
+margin-left: 195px;
+margin-right: 195px;
+margin-top: 0px;
+max-width: 330px;
+padding-bottom: 15px;
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 15px;
+width: 330px;
+}
 
 @media (max-width: 767px) {
   .visible-xs {
