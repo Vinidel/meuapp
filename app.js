@@ -1,8 +1,13 @@
+const KEY = 'meuapp.sid', SECRET = 'meuapp';
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var load = require('express-load');
+//session
+var expressSession = require('express-session');
+var cookie = cookieParser(SECRET);
+var store = new expressSession.MemoryStore();
 
 //changing to Express-load
 // var routes = require('./routes/index');
@@ -11,13 +16,20 @@ var load = require('express-load');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views',__dirname + '/views');
 app.set('view engine', 'ejs');
+app.use(cookieParser('meuapp'));
+app.use(expressSession({
+	secret: SECRET,
+	name: KEY,
+	resave: true,
+	saveUninitialized: true,
+	store: store
+	}));
 
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 //changing to Express-load

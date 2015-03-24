@@ -2,7 +2,27 @@ module.exports = function(app){
 
   var HomeController = {
       index: function(req, res){
-        res.render('home/index')
+        console.log('Entrou no index');
+        var user = req.session.user;
+        var params = {user: user};
+
+        res.render('home/first-page', params);
+      },
+      login: function(req, res){
+        console.log('Entrou no /login')
+        var email = req.body.user.email;
+        var user = req.body.user.name;
+
+        if(email && user){
+          var user = req.body.user;
+          req.session.user = user;
+
+          console.log(user);
+          res.render('home/first-page');
+        }else{
+          res.redirect('/');
+        }
+
       }
   };
   return HomeController;
