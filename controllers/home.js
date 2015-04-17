@@ -18,11 +18,21 @@ module.exports = function(app){
           req.session.user = user;
 
           console.log(user);
-          res.render('home/first-page');
+          res.render('home/home');
         }else{
           res.redirect('/');
         }
 
+      },
+      logout: function(req, res) {
+        req.session.destroy(function (err) {
+          if(err){
+            throw err;
+          }else {
+            res.redirect('/');
+          }
+
+        })
       }
   };
   return HomeController;
