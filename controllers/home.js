@@ -6,10 +6,11 @@ module.exports = function(app){
         var user = req.session.user;
         var params = {user: user};
 
-        res.render('home/first-page', params);
+        res.render('home/home', params);
       },
       login: function(req, res){
         console.log('Entrou no /login')
+
         var email = req.body.user.email;
         var user = req.body.user.name;
 
